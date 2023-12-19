@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        background-color: rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 1px red;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      ul,
+      li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .menu-wrapper {
+        font-size: 0;
+      }
+      .menu-wrapper li {
+        position: relative;
+        padding: 5px 10px;
+      }
+      .menu-wrapper > li {
+        position: relative;
+        display: inline-block;
+        padding: 5px 10px;
+        font-size: initial;
+      }
+      .menu-wrapper li:hover {
+        background-color: red;
+      }
+      .menu-wrapper > li ul {
+        display: none;
+      }
+      .menu-wrapper > li:hover > ul {
+        display: block;
+      }
+      .menu-wrapper > li > ul {
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        left: 0;
+      }
+      .menu-wrapper > li:hover > ul > li:hover > ul {
+        display: block;
+      }
+      .menu-wrapper > li:hover > ul > li:hover > ul {
+        position: absolute;
+        top: 0;
+        left: 100%;
+      }
+      /* .menu-wrapper > li > ul > li {
+        position: absolute;
+        top: 0;
+        left: 100%;
+      } */
+    </style>
+  </head>
+  <body>
+    <ul class="menu-wrapper">
+      <li>
+        Lorem.
+        <ul>
+          <li>Lorem.</li>
+          <li>Suscipit?</li>
+          <li>Ab.</li>
+        </ul>
+      </li>
+      <li>
+        Voluptatum.
+        <ul>
+          <li>Lorem.</li>
+          <li>Suscipit?</li>
+          <li>Ab.</li>
+        </ul>
+      </li>
+      <li>
+        Laudantium.
+        <ul>
+          <li>Lorem.</li>
+          <li>Suscipit?</li>
+          <li>Ab.</li>
+        </ul>
+      </li>
+      <li>
+        Exercitationem?
+        <ul>
+          <li>
+            Lorem.
+            <ul>
+              <li>Lorem.</li>
+              <li>Cupiditate.</li>
+              <li>Libero.</li>
+            </ul>
+          </li>
+          <li>
+            Suscipit?
+            <ul>
+              <li>Lorem.</li>
+              <li>Cupiditate.</li>
+              <li>Libero.</li>
+            </ul>
+          </li>
+          <li>
+            Ab.
+            <ul>
+              <li>Lorem.</li>
+              <li>Cupiditate.</li>
+              <li>Libero.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>

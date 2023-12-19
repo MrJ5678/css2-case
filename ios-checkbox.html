@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* * {
+        background-color: rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 1px red;
+      } */
+      label {
+        position: relative;
+        display: inline-block;
+        width: 270px;
+        height: 160px;
+        border: 3px solid #cbcbcb;
+        border-radius: 9999px;
+        box-sizing: border-box;
+        transition: 1s;
+      }
+      label span {
+        position: absolute;
+        height: 135px;
+        width: 135px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        left: 6px;
+        box-shadow: 0 5px 10px gray;
+        border-radius: 999px;
+        background-color: #fff;
+        transition: 1s;
+      }
+      input:checked + label {
+        box-shadow: 0 0 0 140px #30f349 inset;
+        border: 6px solid #30f349;
+      }
+      input:checked + label span {
+        left: 120px;
+      }
+    </style>
+  </head>
+  <body>
+    <input hidden type="checkbox" name="" id="switch" />
+    <label for="switch">
+      <span></span>
+    </label>
+  </body>
+</html>

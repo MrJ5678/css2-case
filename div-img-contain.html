@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        background-color: rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 1px red;
+      }
+      div {
+        width: 200px;
+        height: 200px;
+        background-image: url(https://img20.360buyimg.com/pop/s1180x940_jfs/t1/76397/5/19688/86711/62a2e221Ec3222d30/30733f0f386ba658.jpg.webp);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      img.a {
+        width: 200px;
+        height: 200px;
+        object-fit: contain;
+      }
+      section {
+        /* position: relative; */
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+        font-size: 0;
+      }
+      section img {
+        /* position: absolute;
+        top: 50%;
+        transform: translateY(-50%); */
+        width: 100%;
+        vertical-align: middle;
+      }
+      main {
+        position: relative;
+        width: 200px;
+        height: 200px;
+      }
+      main img {
+        position: absolute;
+        max-width: 100%;
+        max-height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <img
+        src="https://img20.360buyimg.com/pop/s1180x940_jfs/t1/76397/5/19688/86711/62a2e221Ec3222d30/30733f0f386ba658.jpg.webp"
+        alt=""
+      />
+    </main>
+    <section>
+      <img
+        src="https://img20.360buyimg.com/pop/s1180x940_jfs/t1/76397/5/19688/86711/62a2e221Ec3222d30/30733f0f386ba658.jpg.webp"
+        alt=""
+      />
+    </section>
+    <div></div>
+    <img
+      class="a"
+      src="https://img20.360buyimg.com/pop/s1180x940_jfs/t1/76397/5/19688/86711/62a2e221Ec3222d30/30733f0f386ba658.jpg.webp"
+      alt=""
+    />
+  </body>
+</html>

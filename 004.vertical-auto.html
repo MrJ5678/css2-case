@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        background-color: rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+      }
+
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        margin: 20px;
+      }
+
+      section {
+        min-width: 600px;
+        background-color: red;
+      }
+
+      section div {
+        width: 600px;
+        margin: 0 auto;
+      }
+
+      main {
+        border: 2px solid #000;
+        width: 600px;
+        margin: 0 auto;
+        margin-top: 20px;
+        padding: 0 10px;
+      }
+
+      main div {
+        background-color: violet;
+        height: 50px;
+      }
+
+      main div:hover {
+        margin: 0 -10px;
+      }
+
+      main p:last-child {
+        height: 4em;
+        overflow: auto;
+      }
+
+      .triangle1 {
+        width: 0;
+        height: 0;
+        margin: 0 auto;
+        margin-top: 20px;
+        border: 50px solid;
+        border-width: 0 50px 50px;
+        border-color: transparent transparent orange transparent;
+      }
+
+      .triangle2 {
+        width: 0;
+        height: 0;
+        margin: 0 auto;
+        border: 50px solid;
+        border-width: 50px 50px 0;
+        border-color: orange transparent transparent transparent;
+      }
+
+      @media screen and (max-width: 639px) {
+        body > div {
+          width: auto;
+        }
+
+        body > div > section {
+          min-width: 0;
+        }
+
+        body > div > section > div {
+          width: auto;
+        }
+
+        body > div > main {
+          width: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <section>
+        <div>aaaa</div>
+      </section>
+      <main>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum excepturi
+          accusantium natus quia in quaerat error laboriosam saepe adipisci,
+          corporis, perspiciatis voluptatem nam, eius maiores laborum
+          exercitationem! Vel, eligendi at!
+        </p>
+        <div></div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum excepturi
+          accusantium natus quia in quaerat error laboriosam saepe adipisci,
+          corporis, perspiciatis voluptatem nam, eius maiores laborum
+          exercitationem! Vel, eligendi at!
+        </p>
+      </main>
+      <div class="triangle1"></div>
+      <div class="triangle2"></div>
+    </div>
+  </body>
+</html>

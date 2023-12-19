@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* * {
+        background-color: rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 1px red;
+      } */
+      body {
+        margin: 0;
+      }
+      .table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      .table thead tr {
+        border-bottom: 2px solid #dee2e6;
+      }
+      .table tbody tr {
+        border-top: 1px solid #dee2e6;
+      }
+      .table th,
+      .table td {
+        padding: 12px;
+      }
+      .table th {
+        text-align: left;
+      }
+      /*  */
+      /*  */
+      /*  */
+      .table-dark {
+        background-color: #343a40;
+        color: #fff;
+      }
+
+      .table-dark.table thead tr {
+        border-bottom: 2px solid #454d55;
+      }
+      .table-dark.table tbody tr {
+        border-top: 1px solid #454d55;
+      }
+      /*  */
+      /*  */
+      /*  */
+      .table-hover.table tbody tr:hover {
+        background-color: #ececec;
+      }
+      .table-dark.table-hover.table tbody tr:hover {
+        background-color: #43494e;
+      }
+      .table-sm th,
+      .table-sm td {
+        padding: 5px;
+      }
+      .table-dark.table-striped tbody tr:nth-child(2n + 1) {
+        background-color: #3e444a;
+      }
+      .table-striped tbody tr:nth-child(2n + 1) {
+        background-color: #f2f2f2;
+      }
+      .table-bordered {
+        border: 1px solid #dee2e6;
+      }
+      .table-bordered th,
+      .table-bordered td {
+        border: 1px solid #dee2e6;
+      }
+      .table-dark.table-bordered th,
+      .table-dark.table-bordered td {
+        border: 1px solid #454d55;
+      }
+      .table-borderless th,
+      .table-borderless td {
+        border: none;
+      }
+      .table-borderless thead tr,
+      .table-borderless tbody tr {
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <table
+      class="table table-bordered table-borderless table-hover table-sm table-striped table-bordered"
+    >
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First</th>
+          <th scope="col">Last</th>
+          <th scope="col">Handle</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td colspan="2">Larry the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

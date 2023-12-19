@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        background-color: rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 1px red;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      aside,
+      div {
+        width: 150px;
+      }
+      aside {
+        position: relative;
+        float: left;
+        background-color: pink;
+      }
+      main {
+        margin-left: 150px;
+        margin-right: 150px;
+        background-color: lightblue;
+        position: relative;
+        xoverflow: hidden;
+      }
+      main::before,
+      div::before,
+      aside::before {
+        content: 'bbb';
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 9999px;
+        z-index: -5;
+      }
+      div {
+        float: right;
+        position: relative;
+        background-color: lightcoral;
+      }
+      div::before {
+        background-color: lightseagreen;
+      }
+      main::before {
+        background-color: lightsalmon;
+      }
+      aside::before {
+        background-color: lightskyblue;
+      }
+
+      section {
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <aside>
+        aside Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Praesentium in suscipit nihil amet dicta porro est nulla quam facere?
+        Numquam ea ab est, exercitationem dolorem quaerat perspiciatis sapiente
+        odio eius!
+      </aside>
+      <div>
+        div Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+        voluptates nam! Vitae officia repudiandae repellat facere iusto, dolores
+        omnis quas laborum sit enim totam tempora maxime deleniti rem iste
+        nesciunt? Magnam, sequi explicabo sit corrupti assumenda, et tenetur
+        doloremque ad eligendi cupiditate nisi velit dolorum est placeat
+        quisquam adipisci facere dolor aperiam dolores ipsam officiis debitis
+        excepturi aliquid! Recusandae, saepe.
+      </div>
+      <main>
+        main Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+        vero natus saepe nam, odit eius atque facilis quidem vitae repudiandae
+        doloribus quis, porro assumenda nobis exercitationem nisi est voluptate
+        quisquam!
+      </main>
+    </section>
+    aaa
+  </body>
+</html>

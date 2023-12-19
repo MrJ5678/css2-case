@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        background-color: rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 1px red;
+      }
+      dl {
+        padding-left: 80px;
+      }
+      dd {
+        margin-left: 0;
+        /* display: inline; */
+        float: left;
+      }
+      dd::before {
+        content: ',';
+      }
+      dt + dd {
+        /* margin-left: 80px; */
+        margin-left: 0;
+      }
+      dt + dd::before {
+        content: '';
+      }
+      dt {
+        height: 0;
+        /* margin-bottom: -22.5px; */
+        margin-left: -80px;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <dl>
+      <dt>导演</dt>
+      <dd>张毅</dd>
+      <dd>张耳</dd>
+      <dd>张三</dd>
+
+      <dt>主演</dt>
+      <dd>利益</dd>
+      <dd>里尔</dd>
+      <dd>离散</dd>
+      <dd>里斯</dd>
+      <dd>礼物</dd>
+      <dd>里流</dd>
+
+      <dt>客串</dt>
+      <dd>网易</dd>
+      <dd>王二</dd>
+      <dd>王三</dd>
+      <dd>往死</dd>
+      <dd>王五</dd>
+      <dd>王刘</dd>
+
+      <dt>群言</dt>
+      <dd>留意</dd>
+      <dd>六二</dd>
+      <dd>六三</dd>
+      <dd>六四</dd>
+      <dd>六五</dd>
+    </dl>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      label {
+        position: relative;
+        display: inline-block;
+        width: 270px;
+        height: 160px;
+        border: 3px solid #cbcbcb;
+        border-radius: 100px;
+        box-sizing: border-box;
+        transition: box-shadow 1s;
+      }
+      label span {
+        position: absolute;
+        top: 0;
+        left: 6px;
+        bottom: 0;
+        right: auto;
+        margin: auto;
+        width: 135px;
+        height: 135px;
+        box-shadow: 0 5px 10px gray;
+        border-radius: 50%;
+        z-index: 10;
+        background-color: #fff;
+        transition: left 0.3s, right 0.3s;
+      }
+      input:checked + label {
+        border: 6px solid #30f349;
+        box-shadow: 0 0 0 99px inset #30f349;
+      }
+      input:checked + label span {
+        left: 120px;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="checkbox" id="c1" />
+    <label for="c1"><span></span></label>
+  </body>
+</html>

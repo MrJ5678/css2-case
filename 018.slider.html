@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        background-color: rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 1px red;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      section {
+        position: relative;
+        width: 300px;
+        height: 200px;
+        border: 3px solid #000;
+      }
+      section > input {
+        display: none;
+      }
+      section ul {
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+      section ul li {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: 0.6s;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        vertical-align: bottom;
+      }
+      section ul li label {
+        position: absolute;
+        width: 25px;
+        height: 50px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        line-height: 50px;
+        text-align: center;
+        cursor: pointer;
+        color: #fff;
+      }
+      section ul li label:nth-last-child(2) {
+        left: 0;
+      }
+
+      section ul li label:nth-last-child(1) {
+        right: 0;
+      }
+
+      section ul li label:hover {
+        background-color: gold;
+      }
+
+      input:nth-child(1):checked ~ ul > li:nth-child(1) {
+        opacity: 1;
+        z-index: 9;
+      }
+      input:nth-child(2):checked ~ ul > li:nth-child(2) {
+        opacity: 1;
+        z-index: 9;
+      }
+      input:nth-child(3):checked ~ ul > li:nth-child(3) {
+        opacity: 1;
+        z-index: 9;
+      }
+      input:nth-child(4):checked ~ ul > li:nth-child(4) {
+        opacity: 1;
+        z-index: 9;
+      }
+      input:nth-child(5):checked ~ ul > li:nth-child(5) {
+        opacity: 1;
+        z-index: 9;
+      }
+      section .indicators-wrapper {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        /* height: 30px; */
+        /* background-color: red; */
+        text-align: center;
+        z-index: 100;
+      }
+      section div.indicators {
+        display: inline-block;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        /* padding: 5px; */
+      }
+      section div.indicators label {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin-left: 3px;
+        margin-right: 3px;
+        border-radius: 50%;
+        background-color: red;
+        cursor: pointer;
+      }
+      input:nth-child(1):checked
+        ~ div.indicators-wrapper
+        div.indicators
+        > label:nth-child(1) {
+        background-color: blue;
+      }
+      input:nth-child(2):checked
+        ~ div.indicators-wrapper
+        div.indicators
+        > label:nth-child(2) {
+        background-color: blue;
+      }
+      input:nth-child(3):checked
+        ~ div.indicators-wrapper
+        div.indicators
+        > label:nth-child(3) {
+        background-color: blue;
+      }
+      input:nth-child(4):checked
+        ~ div.indicators-wrapper
+        div.indicators
+        > label:nth-child(4) {
+        background-color: blue;
+      }
+      input:nth-child(5):checked
+        ~ div.indicators-wrapper
+        div.indicators
+        > label:nth-child(5) {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <input type="radio" checked name="s1" id="s1-1" />
+      <input type="radio" name="s1" id="s1-2" />
+      <input type="radio" name="s1" id="s1-3" />
+      <input type="radio" name="s1" id="s1-4" />
+      <input type="radio" name="s1" id="s1-5" />
+      <ul>
+        <li>
+          <a href="">
+            <img
+              src="https://img20.360buyimg.com/pop/s1180x940_jfs/t1/76397/5/19688/86711/62a2e221Ec3222d30/30733f0f386ba658.jpg.webp"
+              alt=""
+            />
+          </a>
+          <label for="s1-5"><</label>
+          <label for="s1-2">></label>
+        </li>
+        <li>
+          <a href="">
+            <img
+              src="https://imgcps.jd.com/ling4/100017835099/5Lqs6YCJ5aW96LSn/5L2g5YC85b6X5oul5pyJ/p-5f3a47329785549f6bc7a6ed/37df1f25/cr/s/q.jpg"
+              alt=""
+            />
+          </a>
+          <label for="s1-1"><</label>
+          <label for="s1-3">></label>
+        </li>
+        <li>
+          <a href="">
+            <img
+              src="https://imgcps.jd.com/ling4/100019386660/5Lqs6YCJ5aW96LSn/5L2g5YC85b6X5oul5pyJ/p-5f3a47329785549f6bc7a6e6/4c556497/cr/s/q.jpg"
+              alt=""
+            />
+          </a>
+          <label for="s1-2"><</label>
+          <label for="s1-4">></label>
+        </li>
+        <li>
+          <a href="">
+            <img
+              src="https://imgcps.jd.com/ling4/100014352501/5Lqs6YCJ5aW96LSn/5L2g5YC85b6X5oul5pyJ/p-5f3a47329785549f6bc7a6e8/6b04aa7a/cr/s/q.jpg"
+              alt=""
+            />
+          </a>
+          <label for="s1-3"><</label>
+          <label for="s1-5">></label>
+        </li>
+        <li>
+          <a href="">
+            <img
+              src="https://imgcps.jd.com/ling4/100013588053/5Lqs6YCJ5aW96LSn/5L2g5YC85b6X5oul5pyJ/p-5f3a47329785549f6bc7a6ee/f0fde901/cr/s/q.jpg"
+              alt=""
+            />
+          </a>
+          <label for="s1-4"><</label>
+          <label for="s1-1">></label>
+        </li>
+      </ul>
+      <div class="indicators-wrapper">
+        <div class="indicators">
+          <label for="s1-1"></label>
+          <label for="s1-2"></label>
+          <label for="s1-3"></label>
+          <label for="s1-4"></label>
+          <label for="s1-5"></label>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        margin: 0 auto;
+        max-width: 600px;
+        min-width: 400px;
+      }
+      .first-line-wrapper {
+        background-color: #000;
+      }
+      .first-line {
+        color: #fff;
+        background-color: #000;
+      }
+      .second-line-wrapper {
+        /* background-color: pink; */
+        overflow: hidden;
+      }
+      .third-line > span {
+        display: inline-block;
+        width: 180px;
+        height: 40px;
+        margin-bottom: 15px;
+        text-align: center;
+        line-height: 34px;
+        border: 3px solid #000;
+        background-color: pink;
+        box-sizing: border-box;
+      }
+      .third-line > span:nth-child(3n + 1),
+      .third-line > span:nth-child(3n + 2) {
+        margin-right: 30px;
+      }
+      .third-line > span:hover {
+        background-color: red;
+      }
+      .fourth-line-wrapper {
+        margin-bottom: 20px;
+      }
+      .fourth-line > span {
+        display: inline-block;
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+      }
+      .fifth-line-wrapper {
+        background-color: pink;
+      }
+      .fifth-line span {
+        display: inline-block;
+        width: 100%;
+        /* background-color: pink; */
+        text-align: center;
+      }
+      @media screen and (max-width: 600px) {
+        .third-line > span {
+          width: 100%;
+          height: 80px;
+          line-height: 74px;
+          margin-right: 0 !important;
+          margin-bottom: 30px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="first-line-wrapper">
+      <div class="container first-line">hello world 请查看效果</div>
+    </div>
+    <div class="second-line-wrapper">
+      <div class="container second-line">
+        <p>
+          页面主题 宽度600px 页面主题 宽度600px 页面主题 宽度600px 页面主题
+          宽度600px 页面主题 宽度600px 页面主题 宽度600px 页面主题 宽度600px
+          页面主题 宽度600px 页面主题 宽度600px 页面主题 宽度600px 页面主题
+          宽度600px 页面主题 宽度600px 页面主题 宽度600px 页面主题 宽度600px
+          页面主题 宽度600px 页面主题 宽度600px
+        </p>
+      </div>
+    </div>
+    <div class="third-line-wrapper">
+      <div class="container third-line">
+        <span>产品</span><span>产品</span><span>产品</span><span>产品</span
+        ><span>产品</span><span>产品</span><span>产品</span><span>产品</span
+        ><span>产品</span><span>产品</span><span>产品</span><span>产品</span>
+      </div>
+    </div>
+    <div class="fourth-line-wrapper">
+      <div class="container fourth-line">
+        <span>link</span><span>link</span><span>link</span><span>link</span
+        ><span>link</span>
+      </div>
+    </div>
+    <div class="fifth-line-wrapper">
+      <div class="container fifth-line">
+        <span class="fifth-line-first">©️版权所有</span>
+        <span class="fifth-line-second">©️本页所有布局使用块元素</span>
+      </div>
+    </div>
+  </body>
+</html>

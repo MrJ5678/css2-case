@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      div {
+        border: 1px solid #000;
+      }
+
+      /* 2个 auto */
+      .div1 {
+        width: 800px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      /* 3个 auto */
+      .div2 {
+        margin-right: auto;
+        margin-left: auto;
+      }
+      /* 2个 auto */
+      .div3 {
+        width: auto;
+        margin-right: 30px;
+        margin-left: auto;
+      }
+      /* 0个 auto */
+      .div4 {
+        width: 500px;
+        margin-left: 30px;
+        margin-right: 30px;
+      }
+      /* 1个 auto */
+      .div5 {
+        width: 500px;
+        margin-left: 30px;
+        margin-right: auto;
+      }
+      .div6 {
+        width: auto;
+        margin-left: 30px;
+        margin-right: 30px;
+      }
+      section {
+        margin: 50px;
+        border: 1px solid red;
+      }
+      .div7 {
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+        border: 5px solid #000;
+      }
+
+      main {
+        background: orange;
+      }
+
+      .div8 {
+        margin: 0 auto;
+        padding: 20px;
+        width: 800px;
+        background: olive;
+        box-sizing: border-box;
+      }
+
+      @media screen and (max-width: 899px) {
+        main {
+          background-color: pink;
+        }
+
+        .div8 {
+          margin: 0 10px;
+
+          width: auto;
+          box-sizing: border-box;
+          background-color: blue;
+        }
+      }
+      .div9 {
+        background-color: red;
+        width: 400px;
+        padding: 10px calc(50% - 200px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+      inventore ipsam esse? Doloremque inventore totam voluptatum, rerum ea
+      nostrum nulla deleniti libero corrupti maxime odio, asperiores nam, dicta
+      iste quasi.
+    </div>
+    <hr />
+    <div class="div2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+      inventore ipsam esse? Doloremque inventore totam voluptatum, rerum ea
+      nostrum nulla deleniti libero corrupti maxime odio, asperiores nam, dicta
+      iste quasi.
+    </div>
+    <hr />
+    <div class="div3">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+      inventore ipsam esse? Doloremque inventore totam voluptatum, rerum ea
+      nostrum nulla deleniti libero corrupti maxime odio, asperiores nam, dicta
+      iste quasi.
+    </div>
+    <div class="div4">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+      inventore ipsam esse? Doloremque inventore totam voluptatum, rerum ea
+      nostrum nulla deleniti libero corrupti maxime odio, asperiores nam, dicta
+      iste quasi.
+    </div>
+    <div class="div5">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+      inventore ipsam esse? Doloremque inventore totam voluptatum, rerum ea
+      nostrum nulla deleniti libero corrupti maxime odio, asperiores nam, dicta
+      iste quasi.
+    </div>
+    <div class="div6">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+      inventore ipsam esse? Doloremque inventore totam voluptatum, rerum ea
+      nostrum nulla deleniti libero corrupti maxime odio, asperiores nam, dicta
+      iste quasi.
+    </div>
+    <section>
+      <div class="div7">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+        debitis odio nobis voluptates architecto dicta vel assumenda eius esse
+        inventore repudiandae magnam cumque iste, qui quasi alias quo facilis.
+        Totam.
+      </div>
+    </section>
+    <main>
+      <div class="div8">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum harum
+        accusamus, cumque tenetur, accusantium quaerat rem deserunt numquam quam
+        totam animi aperiam perspiciatis, quia dolore. Vero adipisci nisi iste
+        aperiam!
+      </div>
+    </main>
+    <div class="div9">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde sed minus
+      qui et, deserunt tempore eveniet esse, labore odit distinctio reiciendis
+      delectus. Hic ex consectetur dicta perferendis animi, eum nostrum!
+    </div>
+  </body>
+</html>

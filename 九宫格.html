@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        background-color: rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 1px red;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      ul,
+      li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      ul {
+        width: 170px;
+        font-size: 0;
+        margin-bottom: 5px;
+      }
+      li {
+        position: relative;
+        display: inline-block;
+        margin-right: -5px;
+        margin-bottom: -5px;
+        vertical-align: top;
+        width: 50px;
+        height: 50px;
+        font-size: initial;
+        text-align: center;
+        line-height: 50px;
+        border: 5px solid #000;
+      }
+      li:hover {
+        border-color: aqua;
+        z-index: 10;
+      }
+      table {
+        border-collapse: collapse;
+      }
+      td {
+        width: 50px;
+        height: 50px;
+        text-align: center;
+      }
+      tr {
+        border: 5px solid blue;
+      }
+      col {
+        border: 5px solid blue;
+      }
+      td:hover {
+        border: 5px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+      <li>7</li>
+      <li>8</li>
+      <li>9</li>
+    </ul>
+
+    <table>
+      <col />
+      <col />
+      <col />
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>8</td>
+          <td>9</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

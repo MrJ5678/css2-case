@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+      body {
+        margin: 20px;
+      }
+      section {
+        /* min-width: 600px; */
+        background-color: red;
+      }
+
+      section > div {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      main {
+        max-width: 600px;
+        margin: 0 auto;
+        margin-top: 20px;
+        padding: 10px;
+        border: 1px solid #000;
+        /* overflow: hidden; */
+        box-sizing: border-box;
+      }
+
+      main > div {
+        width: auto;
+        height: 50px;
+        background-color: violet;
+      }
+
+      main > div:hover {
+        margin: 0 -10px;
+      }
+
+      main p:last-child {
+        height: 3em;
+        overflow: auto;
+      }
+
+      div.sanjiao1 {
+        margin: 0 auto;
+        margin-top: 20px;
+        width: 0;
+        border-top: none;
+        border-left: 50px solid transparent;
+        border-bottom: 50px solid orange;
+        border-right: 50px solid transparent;
+      }
+
+      div.sanjiao2 {
+        margin: 0 auto;
+        width: 0;
+        border-top: 50px solid orange;
+        border-left: 50px solid transparent;
+        border-bottom: none;
+        border-right: 50px solid transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div>aaaa</div>
+    </section>
+    <main>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos aliquam
+        voluptates inventore fugit libero molestiae, nisi eius placeat ea saepe
+        maiores a? Facilis sequi recusandae corporis minima blanditiis
+        architecto tenetur.
+      </p>
+      <div></div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos aliquam
+        voluptates inventore fugit libero molestiae, nisi eius placeat ea saepe
+        maiores a? Facilis sequi recusandae corporis minima blanditiis
+        architecto tenetur.
+      </p>
+    </main>
+    <div class="sanjiao1"></div>
+    <div class="sanjiao2"></div>
+  </body>
+</html>
